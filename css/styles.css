@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .2s ease-in;
+}
+
+html { height: 100%; }
+
+body {
+	font-family: “Tebuchet MC”, Tebuchet, Arial, sans-serif;
+	outline: 20px solid #fff;
+	background-color: #3B3F45;
+	min-height: 100%;
+}
+
+header,
+footer {
+	color: #EB7E7F;
+	background-color: #4A4F56;
+	text-align: center;
+	padding: 50px 0 20px;
+	font-size: 21px;
+	margin: 0;
+}
+
+header {
+	margin-bottom: 20px;
+}
+input {
+	height: 18px;
+	width: 18px;
+}
+.shopping {
+	margin-bottom: 30px;
+	list-style-type: none;
+}
+
+.shopping li {
+	background-color: #88839E;
+}
+
+.shopping li:nth-child(even) {
+	background-color: #7A7593;
+}
+
+.shopping label {
+	display: block;
+	padding: 10px;	
+	color: #FFF;
+}
+
+.shopping label:hover {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #625E77;
+}
+
+.shopping label:active{
+	background-color: #788196;
+	text-decoration: line-through;
+}
+
+.shopping input[type="checkbox"] {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 3px;
+	margin: 0 15px 0 10px;
+}
+
+.shopping input[type="checkbox"]:checked ~ span {
+	color: #A49EB2;
+	text-decoration: line-through;
+}
+
+.item {
+	vertical-align: middle;
+}
+	
+.note {
+	font-size: 14px;
+	color: #C5BDC3;
+}
+
+.note:before {
+	content: " ( ";
+}
+
+.note:after {
+	content: " )";
+}
+
+.note:empty:before,
+.note:empty:after {
+	content: "";
+}
+footer {
+	padding: 20px 0;
+	
+}
+
+.shopping,
+footer {
+	margin: 30px auto;
+	width: 50%;
+	}
